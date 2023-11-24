@@ -1,0 +1,171 @@
+/*BODY*/
+* {
+    transition: 2s;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*1st page ganon*/
+.header {
+    background-image: url("3c7dd03430a4c26a90a3b9479139b16a.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 150vh;
+    width: 100%;
+    position: relative;
+}
+
+/*navigation logo*/
+nav {
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* nav all right of left*/
+.nav-links {
+    flex: 6%;
+    text-align: right;
+}
+
+/*navigation position*/
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: blue;
+}
+
+/* sa nav links */
+.nav-links ul li a {
+    color: rgb(51, 3, 3);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* hindi ko alam kung para saan 'to kaya inalis ko muna*/
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0fb82b;
+    display: block;
+    margin: auto;
+    transition: ease-in-out;
+}
+
+/*click home*/
+.text-box {
+    margin: 10%;
+    color: rgb(156, 79, 79);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*CITY OF LEGAZPI*/
+.text-box h1 {
+    font-size: 62px;
+}
+
+/*paragraph for city of legazpi*/
+.text-box p {
+    margin: 10 0 40px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+/* VISIT US TO KNOW MORE*/
+.about-know {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    border: 1px solid #a50707;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/*color when pointing at visit us to know more button*/
+.about-know:hover {
+    border: #007f7f;
+    background: #007f7f;
+    transition: 1s;
+}
+
+/*click tourist attraction*/
+
+
+/*TOURIST ATTRACTION*/
+.tourism {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+}
+
+/*TOURIST ATTRACTION TITLE*/
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+
+    /NATURAL TOURIST ATTRACTION*/ h2 {
+        background-color: royalblue;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+}
+
+/*TOURIST ATTRACTIONS*/
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*tourist attraction description*/
+p {
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px
+}
+
+/*ROW STYLE*/
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*COLUMN STYLE*/
+.tourism-col {
+    flex-basis: 31%;
+    background: rgb(59, 98, 207);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transform: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/*color of tourist attraction box if click*/
+.tourism-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 2);
+}
