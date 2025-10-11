@@ -1,26 +1,21 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch index.html",
+            "name": "Launch index.html (static file)",
             "type": "firefox",
             "request": "launch",
-            "reAttach": true,
             "file": "${workspaceFolder}/index.html"
         },
         {
-            "name": "Launch localhost",
+            "name": "Launch localhost (dev server)",
             "type": "firefox",
             "request": "launch",
-            "reAttach": true,
-            "url": "http://localhost/index.html",
+            "url": "http://localhost:3000/index.html", // Change port if needed
             "webRoot": "${workspaceFolder}"
         },
         {
-            "name": "Attach",
+            "name": "Attach to Firefox",
             "type": "firefox",
             "request": "attach"
         },
@@ -28,7 +23,6 @@
             "name": "Launch WebExtension",
             "type": "firefox",
             "request": "launch",
-            "reAttach": true,
             "addonPath": "${workspaceFolder}"
         }
     ]
