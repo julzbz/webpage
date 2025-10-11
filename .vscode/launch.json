@@ -6,24 +6,6 @@
             "type": "firefox",
             "request": "launch",
             "file": "${workspaceFolder}/index.html"
-        },
-        {
-            "name": "Launch localhost (dev server)",
-            "type": "firefox",
-            "request": "launch",
-            "url": "http://localhost:3000/index.html", // Change port if needed
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "name": "Attach to Firefox",
-            "type": "firefox",
-            "request": "attach"
-        },
-        {
-            "name": "Launch WebExtension",
-            "type": "firefox",
-            "request": "launch",
-            "addonPath": "${workspaceFolder}"
         }
     ]
 }
