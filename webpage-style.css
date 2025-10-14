@@ -24,8 +24,6 @@ nav {
     align-items: center;
 }
 
-
-
 /* nav all right of left*/
 .nav-links {
     flex: 6%;
@@ -104,7 +102,6 @@ nav {
 
 /*click tourist attraction*/
 
-
 /*TOURIST ATTRACTION*/
 .tourism {
     width: 90%;
@@ -117,13 +114,16 @@ nav {
 h1 {
     font-size: 40px;
     font-weight: 600;
+}
 
-    /NATURAL TOURIST ATTRACTION*/ h2 {
-        background-color: royalblue;
-        font-size: 36px;
-        font-weight: 500;
-    }
-
+/*NATURAL TOURIST ATTRACTION*/
+h2 {
+    background-color: royalblue;
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /*TOURIST ATTRACTIONS*/
@@ -138,7 +138,7 @@ p {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 10px
+    padding: 10px;
 }
 
 /*ROW STYLE*/
@@ -146,6 +146,8 @@ p {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /*COLUMN STYLE*/
@@ -156,7 +158,7 @@ p {
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    transform: 0.5s;
+    transition: 0.5s;
 }
 
 h3 {
@@ -168,4 +170,70 @@ h3 {
 /*color of tourist attraction box if click*/
 .tourism-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 2);
+}
+
+/* ---------------------- */
+/* RESPONSIVE DESIGN */
+/* ---------------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+    .tourism-col {
+        flex-basis: 45%;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    .header {
+        background-size: cover;
+    }
+    .text-box {
+        top: 30%;
+        width: 90%;
+    }
+    .text-box h1 {
+        font-size: 28px;
+    }
+    .text-box p {
+        font-size: 13px;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tourism-col {
+        flex-basis: 90%;
+    }
+    nav ul {
+        padding: 0;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .nav-links ul li {
+        display: block;
+        margin: 8px 0;
+    }
+    .text-box h1 {
+        font-size: 24px;
+    }
+    .about-know {
+        padding: 10px 25px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
 }
