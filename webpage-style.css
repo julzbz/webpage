@@ -9,24 +9,25 @@
 
 /*1st page ganon*/
 .header {
-    background-image: url("webpage/3c7dd03430a4c26a90a3b9479139b16a.jpg");
+    background-image: url("3c7dd03430a4c26a90a3b9479139b16a.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     width: 100%;
     position: relative;
-    color: #fff;
-    text-shadow: 0 0 5px #000;
+    display: flex;
+    flex-direction: column;
 }
 
 /*navigation logo*/
 nav {
     display: flex;
-    padding: 2% 5%;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-bottom: 2px solid #0044cc;
+    padding: 15px 5%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-bottom: 2px solid #0c3c8c;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 /* nav all right of left*/
@@ -36,51 +37,72 @@ nav {
 }
 
 /*navigation position*/
-.nav-links ul li {
+.nav-links ul {
     list-style: none;
+}
+
+.nav-links ul li {
     display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+    margin: 0 15px;
 }
 
 /* sa nav links */
 .nav-links ul li a {
-    color: #000;
+    color: #0c3c8c;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
 }
 
-.nav-links ul li a:hover {
-    color: #0044cc;
-    border-bottom: 2px solid #0044cc;
+/* underline hover effect */
+.nav-links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0c3c8c;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
 }
 
 /*click home*/
 .text-box {
-    margin: 10%;
-    color: #000;
+    color: #0c3c8c;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 30px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px 50px;
+    border-radius: 15px;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /*CITY OF LEGAZPI*/
 .text-box h1 {
-    font-size: 45px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #001b50;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
 /*paragraph for city of legazpi*/
 .text-box p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 17px;
+    color: #222;
+    line-height: 1.8;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 /* VISIT US TO KNOW MORE*/
@@ -88,16 +110,18 @@ nav {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    border: none;
-    padding: 12px 34px;
+    background: #0c3c8c;
+    padding: 12px 36px;
     font-size: 16px;
-    background: #0044cc;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .about-know:hover {
-    background: #0066ff;
+    background: #1a56b3;
+    transform: scale(1.05);
 }
 
 /*TOURIST ATTRACTION*/
@@ -112,12 +136,12 @@ nav {
 h1 {
     font-size: 42px;
     font-weight: 700;
-    color: #003366;
+    color: #0c3c8c;
     margin-bottom: 40px;
 }
 
 h2 {
-    background-color: #0044cc;
+    background-color: #0c3c8c;
     color: #fff;
     display: inline-block;
     padding: 8px 16px;
@@ -172,11 +196,7 @@ p {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-/*============================*/
-/* 📱 RESPONSIVE DESIGN */
-/*============================*/
-
-/* Tablets */
+/* 
 @media (max-width: 900px) {
     nav {
         flex-direction: column;
@@ -194,7 +214,12 @@ p {
     }
 
     .text-box h1 {
-        font-size: 32px;
+        font-size: 34px;
+    }
+
+    .text-box p {
+        text-align: center;
+        font-size: 15px;
     }
 
     .row {
@@ -207,8 +232,13 @@ p {
     }
 }
 
-/* Phones */
+
 @media (max-width: 600px) {
+    .text-box {
+        width: 90%;
+        padding: 25px;
+    }
+
     .text-box h1 {
         font-size: 28px;
     }
@@ -217,20 +247,13 @@ p {
         font-size: 14px;
     }
 
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
     nav img {
         width: 60px;
         height: 60px;
     }
+
+    .nav-links ul li a {
+        font-size: 16px;
+    }
 }
+*/
